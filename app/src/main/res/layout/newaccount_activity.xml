@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/darkerGrey" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your Account"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/lighterBlue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/CreateYourAcc"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CreateYourAcc"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="10dp"
+        android:hint="First Name"
+        android:textColor="@color/darkerBlue"
+        android:textColorHint="@color/black"
+        android:id="@+id/RegisterFirstName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterFirstName"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Last Name"
+        android:textColorHint="@color/black"
+        android:id="@+id/RegisterLastName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterLastName"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:id="@+id/RegisterEmail"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterEmail"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:id="@+id/RegisterPassword"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterPassword"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Repeat Password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:id="@+id/RegisterConfirmPassword"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterConfirmPassword"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:id="@+id/RegisterBtn"
+        android:backgroundTint="@color/darkerBlue"
+        android:textColor="@color/white"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterBtn"
+        android:text="After verifiying your email log into your account."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+</RelativeLayout>

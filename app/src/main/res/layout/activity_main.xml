@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lighterGrey">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Welcome to ChatApp"
+        android:textSize="35dp"
+        android:textColor="@color/darkerBlue"
+        android:id="@+id/WelcomeToChatApp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WelcomeToChatApp"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:id="@+id/Email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:textColor="@color/darkerBlue"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:id="@+id/Password"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginBtn"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/darkerBlue"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginBtn"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="Create an account"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/darkerBlue"
+        android:textColor="@color/white"
+        android:id="@+id/CreateAnAccBtn"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/GoogleSignInBtn"
+        android:background="@color/darkerBlue"
+        android:visibility="invisible"
+        android:clickable="false"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

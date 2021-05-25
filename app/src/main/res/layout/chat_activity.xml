@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lighterGrey">
+
+
+
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/appBar">
+
+
+       <include
+           android:id="@+id/toolbarChat"
+           layout="@layout/toolbar">
+
+       </include>
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/chatTab"
+           android:background="@color/darkerBlue"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+       </com.google.android.material.tabs.TabLayout>
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatTabPager"
+        android:layout_below="@+id/appBar"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+
+</RelativeLayout>
